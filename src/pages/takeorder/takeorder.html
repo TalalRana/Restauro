@@ -1,0 +1,109 @@
+<!--
+  Generated template for the TakeorderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>Take Order</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2></ion-col>
+          <ion-col col-8>
+             <img ion-img style=" border-radius:30% ;margin-top:30%" src="assets/imgs/2.png">
+          </ion-col>
+          <ion-col col-2></ion-col>
+        </ion-row>
+        <h3 text-center>Order Selection</h3><br>
+        <ion-row>
+          <ion-col col-12>
+            <ion-list>
+              <ion-item style="color:white">
+                  <ion-label ><strong>Category</strong></ion-label>
+                  <ion-select interface="popover">
+                    <ion-option>Breakfast</ion-option>
+                    <ion-option>Lunch</ion-option>
+                    <ion-option>Hi-Tea</ion-option>
+                    <ion-option>Dinner</ion-option>
+                  </ion-select>
+              </ion-item>
+            </ion-list>
+           
+          </ion-col>   
+             </ion-row>
+        <ion-row>
+          <ion-col col-12>
+            <ion-list>
+              <ion-item>
+                  <ion-label ><strong>Meal</strong></ion-label>
+                  <ion-select interface="popover" multiple	>
+                    <ion-option>Baryani</ion-option>
+                    <ion-option>Chicken</ion-option>
+                    <ion-option>Beaf</ion-option>
+                    <ion-option>Mutton</ion-option>
+                    <ion-option>Fish</ion-option>
+                    <ion-option>Burger</ion-option>
+                    <ion-option>Vegetables</ion-option>
+                    <ion-option>Noodles</ion-option>
+                  </ion-select>
+              </ion-item>
+            </ion-list>            
+          </ion-col>
+          <ion-col col-12>
+              <ion-list>
+                <ion-item>
+              <ion-label ><strong>Drinks</strong></ion-label>
+                  <ion-select interface="popover" multiple	>
+                    <ion-option>Cofee</ion-option>
+                    <ion-option>Tea</ion-option>
+                    <ion-option>Cold Drinks</ion-option>
+                    <ion-option>Shakes</ion-option>
+                  </ion-select>
+            </ion-item>
+          </ion-list>
+          </ion-col>
+          <ion-col col-12> 
+              <ion-list>
+                <ion-item>
+                  <ion-label ><strong>Sweets</strong></ion-label>
+                  <ion-select interface="popover" multiple	>
+                    <ion-option>Mithai</ion-option>
+                    <ion-option>Halwa</ion-option>
+                    <ion-option>Rasmalai</ion-option>
+                    <ion-option>Kheer</ion-option>
+                    <ion-option>Falooda</ion-option>
+                  </ion-select>
+                </ion-item>
+            </ion-list>           
+           </ion-col>
+           <ion-col col-3></ion-col>
+           <ion-col col-6>
+             <button ion-button round block color="danger" (click)="home()" >Proceed Order</button>                
+           </ion-col>
+           <ion-col col-3></ion-col>
+          </ion-row>
+    </ion-grid>  
+</ion-content>
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-1>
+       <button ion-button color="danger" clear (click)="back()" style="text-transform: none">
+          <ion-icon color="danger" style="font-size: 30px !important;" name="arrow-back"></ion-icon> &nbsp; Back
+       </button>
+      </ion-col>
+      <ion-col col-4></ion-col>
+      <ion-col col-7>
+       <button ion-button clear color="danger" (click)="home()" style="text-transform: none">
+         <ion-icon color="danger" style="font-size: 30px !important;" name="arrow-forward"></ion-icon> &nbsp;
+          Proceed This Order 
+       </button>   
+      </ion-col>
+    </ion-row>
+  </ion-grid>    
+</ion-footer>

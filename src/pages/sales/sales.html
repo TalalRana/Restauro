@@ -1,0 +1,122 @@
+<!--
+  Generated template for the SettingsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <ion-header><ion-toolbar>
+      <ion-grid>
+       <ion-row>
+        <ion-col col-2>         
+         <button ion-button menuToggle style="background-color: rgb(175, 238, 93)"><h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="menu" > </ion-icon></h5></button>
+        </ion-col> 
+        <ion-col col-10>
+         <ion-title text-center><h4><strong>Sales Record</strong></h4></ion-title>
+        </ion-col> 
+       </ion-row><br>
+      </ion-grid>
+   </ion-toolbar></ion-header>
+
+   <ion-content padding >
+      <ion-grid>
+          <ion-row>
+          <ion-col col-2>
+            <p>Date</p>
+          </ion-col> 
+          <ion-col col-1>
+            <p>To</p>
+          </ion-col> 
+          <ion-col col-3>
+              <ion-input style="border : 1px solid #dddddd; border-radius : 8px; "></ion-input>       
+            </ion-col>
+            <ion-col col-2>
+              <p>From</p>
+            </ion-col> 
+            <ion-col col-3>
+                <ion-input style="border : 1px solid #dddddd; border-radius : 8px; "></ion-input>          
+            </ion-col>
+            <ion-col col-1>
+                <ion-icon style="font-size: 30px !important; padding-top: 5px" name="search"> </ion-icon>
+              </ion-col>
+          </ion-row>
+      </ion-grid>
+         <h4>Date</h4>
+      <ion-card>
+        <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-9>
+              <h3>Total Sales</h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 0</h4>
+            </ion-col>
+            <ion-col col-9>
+              <h3>Total Purchase  </h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 0</h4>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>     
+      </ion-card>
+      <h4>Total So Far</h4>
+      <ion-card>
+        <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-9>
+              <h3>Total Sale</h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 24809.66
+              </h4>
+            </ion-col>
+            <ion-col col-9>
+              <h3>Total Purchase  </h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 6280</h4>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>     
+      </ion-card>
+      <h4>Today</h4>
+      <ion-card>
+        <ion-card-content>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-9>
+              <h3>Total Sale</h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 0</h4>
+            </ion-col>
+            <ion-col col-9>
+              <h3>Total Purchase  </h3>
+            </ion-col>
+            <ion-col col-3>
+              <h4>Rs: &nbsp; 0</h4>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>     
+      </ion-card>  
+   </ion-content>
+
+<ion-footer>
+ <ion-grid>
+   <ion-row>
+     <ion-col>
+       <button ion-button style="text-transform: none" clear color= "Dark" (click)=back()>
+         <ion-icon style="font-size: 30px !important;" name="arrow-back">
+         </ion-icon>
+         Back
+       </button>
+     </ion-col>
+   </ion-row>
+ </ion-grid>
+</ion-footer>

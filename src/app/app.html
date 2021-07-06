@@ -1,0 +1,40 @@
+<ion-menu [content]=con>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content padding>
+        <ion-grid>
+            <ion-row>
+              <ion-col col-2></ion-col>
+              <ion-col col-8>
+                 <img ion-img style=" border-radius:30% ;margin-top:30%" src="assets/imgs/2.png">
+              </ion-col>
+              <ion-col col-2></ion-col>
+            </ion-row>
+        </ion-grid>
+        <ion-list no-lines>
+        <ion-item ion-item (click)="home()" menuClose >
+            <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="home"></ion-icon> &nbsp; Home</h5>
+        </ion-item>
+           <ion-item (click)="sales()" menuClose >
+               <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="cash"></ion-icon> &nbsp;&nbsp; Sales</h5> 
+           </ion-item>
+              <ion-item (click)="order()" menuClose >
+                 <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="create"></ion-icon> &nbsp;&nbsp; Order</h5> 
+              </ion-item>
+           <ion-item (click)="report()" menuClose >
+               <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="document"></ion-icon> &nbsp; &nbsp;Report</h5>
+           </ion-item>
+           <ion-item (click)="settings()" menuClose >
+               <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="settings"></ion-icon> &nbsp;&nbsp; Settings</h5>
+           </ion-item>
+           <ion-item (click)="logout()" menuClose >
+            <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="power"></ion-icon> &nbsp; Logout</h5>
+           </ion-item>
+          </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+<ion-nav #con [root]="rootPage"></ion-nav>

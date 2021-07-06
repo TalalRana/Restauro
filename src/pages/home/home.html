@@ -1,0 +1,137 @@
+
+<ion-header><ion-toolbar >
+  <ion-grid>
+   <ion-row >
+    <ion-col col-2>         
+      <button ionbutton menuToggle style="background-color: rgb(175, 238, 93">
+        <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="menu" ></ion-icon></h5>
+      </button>
+    </ion-col> 
+    <ion-col col-8>
+      <ion-title text-center style=" padding-top:5%"><h4><strong>Resturant</strong></h4></ion-title>
+    </ion-col>
+    <ion-col col-1>
+      <ion-icon style="font-size: 30px !important; padding-top: 0.8em !important" name="search"> </ion-icon>
+    </ion-col>
+    <ion-col col-1>
+        <ion-icon style="font-size: 30px !important; padding-top: 0.8em !important" name="sync"> </ion-icon>
+      </ion-col>  
+   </ion-row><br>
+   <ion-row>
+     <ion-col col-12>
+       <ion-searchbar Placeholder="."></ion-searchbar>
+     </ion-col>
+   </ion-row>
+  </ion-grid>
+        <div padding>
+            <ion-segment [(ngModel)]="food" >
+              <ion-segment-button value="meal" >
+                Meal
+              </ion-segment-button>
+              <ion-segment-button value="drinks">
+                Drinks
+              </ion-segment-button>
+              <ion-segment-button value="sweets">
+                  Sweets
+                </ion-segment-button>
+            </ion-segment>
+          </div>
+          
+          <div [ngSwitch]="food">
+              <ion-list no-lines *ngSwitchCase="'meal'">
+                <ion-item>
+                  <h2>Rice</h2>
+                </ion-item>
+                <ion-item>
+                  <h2>Chicken</h2>
+                </ion-item>
+                <ion-item>
+                 <h2>Mutton</h2>
+               </ion-item>
+               <ion-item>
+                  <h2>Beaf</h2>
+               </ion-item>
+               <ion-item>
+                  <h2>Fish</h2>
+               </ion-item>
+               <ion-item>
+                  <h2>Vegetables</h2>
+               </ion-item>
+    
+              </ion-list>
+            
+              <ion-list no-lines *ngSwitchCase="'drinks'">
+                <ion-item>
+                 <h2>Cofee</h2>
+                </ion-item>
+                <ion-item>
+                 <h2>Tea</h2>
+               </ion-item>
+               <ion-item>
+                 <h2>Cold Drinks</h2>
+               </ion-item>
+               <ion-item>
+                 <h2>Shakes</h2>
+               </ion-item>
+              </ion-list>
+    
+              <ion-list no-lines *ngSwitchCase="'sweets'">
+                  <ion-item>
+                   <h2>Icecreem</h2>
+                  </ion-item>
+                  <ion-item>
+                   <h2>Halwa</h2>
+                 </ion-item>
+                 <ion-item>
+                   <h2>Sweets</h2>
+                 </ion-item>
+                 <ion-item>
+                   <h2>Shakes</h2>
+                 </ion-item>
+                </ion-list>
+            </div>
+</ion-toolbar></ion-header>
+
+
+<ion-content padding >
+    <ion-grid>
+        <ion-row>
+          <ion-col col-2></ion-col>
+          <ion-col col-8>
+             <img ion-img style=" border-radius:30% ;margin-top:5%" src="assets/imgs/2.png">
+          </ion-col>
+          <ion-col col-2></ion-col>
+        </ion-row>
+    </ion-grid>
+    <ion-card style="padding-top: 10%">
+        <img src="assets/imgs/4.jpg"/>
+        <ion-card-content>
+          <ion-card-title>
+            Afhani Pulao
+            </ion-card-title>
+          <p color="dark">
+            The most popular Dish ever, and largely
+            responsible for bringing the people towards food is available now.
+          </p>
+        </ion-card-content>
+      </ion-card> 
+      <ion-card style="padding-top: 5%">
+          <img src="assets/imgs/5.jpg"/>
+          <div class="card-title">Chicken Sajji Pulaao</div>
+          <div class="card-subtitle">A perfect Combination</div>
+        </ion-card> 
+        <ion-card style="padding-top: 5%">
+            <img src="assets/imgs/curry.jpg"/>
+            <div class="card-title">Mutton Curry</div>
+            <div class="card-subtitle">With Special Discount</div>
+          </ion-card>
+          <ion-card style="padding-top: 5%">
+              <img src="assets/imgs/stroganoff.jpg"/>
+              <div class="card-title">Stroganoff Beef</div>
+              <div class="card-subtitle">Our Pride Dish</div>
+            </ion-card>
+
+</ion-content>
+
+
+

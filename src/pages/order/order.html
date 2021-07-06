@@ -1,0 +1,69 @@
+<!--
+  Generated template for the OrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <ion-header><ion-toolbar >
+      <ion-grid>
+       <ion-row>
+        <ion-col col-1>
+          <button ionbutton menuToggle style="background-color: rgb(175, 238, 93">
+            <h5><ion-icon style="font-size: 30px !important; padding-top: 5px" name="menu" ></ion-icon></h5>
+          </button>
+        </ion-col> 
+        <ion-col col-11>
+          <ion-title text-center><h4><strong> Order</strong></h4></ion-title>
+        </ion-col> 
+    </ion-row><br>
+    <ion-row>
+      <ion-col col-12>
+         <ion-segment >
+           <ion-segment-button clear color="transparent" value="Pending">
+             Pending
+           </ion-segment-button>
+           <ion-segment-button clear value="History">
+             History
+           </ion-segment-button>      
+         </ion-segment>
+       </ion-col>
+    </ion-row><br>
+    <ion-row>
+        <ion-col>
+          <ion-searchbar style="max-width: 100% ;" Placeholder="."></ion-searchbar>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
+ </ion-toolbar></ion-header>
+ 
+ 
+ <ion-content padding>
+     <ion-grid>
+         <ion-row>
+           <ion-col col-2></ion-col>
+           <ion-col col-8>
+              <img ion-img style=" border-radius:30% ;margin-top:30%" src="assets/imgs/2.png">
+           </ion-col>
+           <ion-col col-2></ion-col>
+           <ion-col col-3></ion-col>
+          <ion-col col-6>
+            <button ion-button round block style="text-transform: none" color="danger" (click)="take()">Take Order</button>                
+          </ion-col>
+          <ion-col col-3></ion-col>
+          <ion-col col-6>
+                           
+          </ion-col>
+         </ion-row>
+     </ion-grid>  
+ 
+ </ion-content>
+ <ion-footer>
+  <button ion-button color="dark" clear (click)="back()" style="text-transform: none">
+    <ion-icon style="font-size: 30px !important;" name="arrow-back"></ion-icon> &nbsp;
+    Back
+  </button> 
+ </ion-footer>
+ 
+ 
+ 
